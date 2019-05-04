@@ -1,0 +1,90 @@
+<top name = "led"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "led">
+
+    <!--
+        Top Level Pins: 12
+    -->
+
+    <pins>
+        <pitem  name = "key[2]"  direction = "in"  />
+        <pitem  name = "key[1]"  direction = "in"  />
+        <pitem  name = "key[0]"  direction = "in"  />
+        <pitem  name = "sw[2]"  direction = "in"  />
+        <pitem  name = "sw[1]"  direction = "in"  />
+        <pitem  name = "sw[0]"  direction = "in"  />
+        <pitem  name = "led1[2]"  direction = "out"  />
+        <pitem  name = "led1[1]"  direction = "out"  />
+        <pitem  name = "led1[0]"  direction = "out"  />
+        <pitem  name = "led2[2]"  direction = "out"  />
+        <pitem  name = "led2[1]"  direction = "out"  />
+        <pitem  name = "led2[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 3
+    -->
+
+    <instance  name = "sw_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sw[0]"  />
+        <nitem  name = "sw_0__N_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "sw_1__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sw[1]"  />
+        <nitem  name = "sw_1__N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "sw_2__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sw[2]"  />
+        <nitem  name = "sw_2__N_1"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "led": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

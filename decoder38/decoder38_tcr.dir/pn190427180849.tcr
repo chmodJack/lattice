@@ -1,0 +1,22 @@
+#Start recording tcl command: 4/27/2019 17:53:58
+#Project Location: D:/code/fpga/lattice/decoder38; Project name: decoder38
+prj_project new -name "decoder38" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "D:/code/fpga/lattice/decoder38/decoder38.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 4/27/2019 18:08:49

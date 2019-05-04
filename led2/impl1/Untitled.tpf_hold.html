@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Sat Apr 27 17:47:42 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     led
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+WARNING - No timing preferences found. Doing default enumeration.
+
+
+
+</A><A name="Default path enumeration
+"></A>================================================================================
+Preference: Default path enumeration
+            6 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    2.631ns delay sw[1] to led2[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         M8.PAD to       M8.PADDI <A href="#@comp:sw[1]">sw[1]</A>
+ROUTE         1     0.788<A href="#@net:sw_c_1:M8.PADDI:R20C7C.B0:0.788">       M8.PADDI to R20C7C.B0     </A> <A href="#@net:sw_c_1">sw_c_1</A>
+CTOF_DEL    ---     0.101      R20C7C.B0 to      R20C7C.F0 <A href="#@comp:SLICE_1">SLICE_1</A>
+ROUTE         1     0.180<A href="#@net:led2_c_1:R20C7C.F0:N3.PADDO:0.180">      R20C7C.F0 to N3.PADDO      </A> <A href="#@net:led2_c_1">led2_c_1</A>
+DOPAD_DEL   ---     1.084       N3.PADDO to         N3.PAD <A href="#@comp:led2[1]">led2[1]</A>
+                  --------
+                    2.631   (63.2% logic, 36.8% route), 3 logic levels.
+
+Report:    2.721ns delay key[2] to led1[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478        M14.PAD to      M14.PADDI <A href="#@comp:key[2]">key[2]</A>
+ROUTE         1     1.159<A href="#@net:led1_c_2_c:M14.PADDI:P2.PADDO:1.159">      M14.PADDI to P2.PADDO      </A> <A href="#@net:led1_c_2_c">led1_c_2_c</A>
+DOPAD_DEL   ---     1.084       P2.PADDO to         P2.PAD <A href="#@comp:led1[2]">led1[2]</A>
+                  --------
+                    2.721   (57.4% logic, 42.6% route), 2 logic levels.
+
+Report:    2.742ns delay sw[0] to led2[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         M7.PAD to       M7.PADDI <A href="#@comp:sw[0]">sw[0]</A>
+ROUTE         1     0.899<A href="#@net:sw_c_0:M7.PADDI:R20C4A.A0:0.899">       M7.PADDI to R20C4A.A0     </A> <A href="#@net:sw_c_0">sw_c_0</A>
+CTOF_DEL    ---     0.101      R20C4A.A0 to      R20C4A.F0 <A href="#@comp:SLICE_2">SLICE_2</A>
+ROUTE         1     0.180<A href="#@net:led2_c_0:R20C4A.F0:M3.PADDO:0.180">      R20C4A.F0 to M3.PADDO      </A> <A href="#@net:led2_c_0">led2_c_0</A>
+DOPAD_DEL   ---     1.084       M3.PADDO to         M3.PAD <A href="#@comp:led2[0]">led2[0]</A>
+                  --------
+                    2.742   (60.6% logic, 39.4% route), 3 logic levels.
+
+Report:    2.797ns delay sw[2] to led2[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         M9.PAD to       M9.PADDI <A href="#@comp:sw[2]">sw[2]</A>
+ROUTE         1     0.842<A href="#@net:sw_c_2:M9.PADDI:R20C7A.C0:0.842">       M9.PADDI to R20C7A.C0     </A> <A href="#@net:sw_c_2">sw_c_2</A>
+CTOF_DEL    ---     0.101      R20C7A.C0 to      R20C7A.F0 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.292<A href="#@net:led2_c_2:R20C7A.F0:P4.PADDO:0.292">      R20C7A.F0 to P4.PADDO      </A> <A href="#@net:led2_c_2">led2_c_2</A>
+DOPAD_DEL   ---     1.084       P4.PADDO to         P4.PAD <A href="#@comp:led2[2]">led2[2]</A>
+                  --------
+                    2.797   (59.5% logic, 40.5% route), 3 logic levels.
+
+Report:    2.826ns delay key[1] to led1[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478        M13.PAD to      M13.PADDI <A href="#@comp:key[1]">key[1]</A>
+ROUTE         1     1.264<A href="#@net:led1_c_1_c:M13.PADDI:N2.PADDO:1.264">      M13.PADDI to N2.PADDO      </A> <A href="#@net:led1_c_1_c">led1_c_1_c</A>
+DOPAD_DEL   ---     1.084       N2.PADDO to         N2.PAD <A href="#@comp:led1[1]">led1[1]</A>
+                  --------
+                    2.826   (55.3% logic, 44.7% route), 2 logic levels.
+
+Report:    2.960ns delay key[0] to led1[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478        L14.PAD to      L14.PADDI <A href="#@comp:key[0]">key[0]</A>
+ROUTE         1     1.398<A href="#@net:led1_c_0_c:L14.PADDI:M2.PADDO:1.398">      L14.PADDI to M2.PADDO      </A> <A href="#@net:led1_c_0_c">led1_c_0_c</A>
+DOPAD_DEL   ---     1.084       M2.PADDO to         M2.PAD <A href="#@comp:led1[0]">led1[0]</A>
+                  --------
+                    2.960   (52.8% logic, 47.2% route), 2 logic levels.
+
+Report:    2.631ns is the minimum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            9 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    0.257ns minimum delay on led2_c_0
+
+           Delays             Connection(s)
+           0.257ns        R20C4A.F0 to M3.PADDO        
+
+Report:    0.257ns minimum delay on led2_c_1
+
+           Delays             Connection(s)
+           0.257ns        R20C7C.F0 to N3.PADDO        
+
+Report:    0.416ns minimum delay on led2_c_2
+
+           Delays             Connection(s)
+           0.416ns        R20C7A.F0 to P4.PADDO        
+
+Report:    0.994ns minimum delay on sw_c_1
+
+           Delays             Connection(s)
+           0.994ns         M8.PADDI to R20C7C.B0       
+
+Report:    1.074ns minimum delay on sw_c_0
+
+           Delays             Connection(s)
+           1.074ns         M7.PADDI to R20C4A.A0       
+
+Report:    1.082ns minimum delay on sw_c_2
+
+           Delays             Connection(s)
+           1.082ns         M9.PADDI to R20C7A.C0       
+
+Report:    1.393ns minimum delay on led1_c_2_c
+
+           Delays             Connection(s)
+           1.393ns        M14.PADDI to P2.PADDO        
+
+Report:    1.544ns minimum delay on led1_c_1_c
+
+           Delays             Connection(s)
+           1.544ns        M13.PADDI to N2.PADDO        
+
+Report:    1.698ns minimum delay on led1_c_0_c
+
+           Delays             Connection(s)
+           1.698ns        L14.PADDI to M2.PADDO        
+
+Report:    0.257ns is the minimum delay for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     2.631 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     0.257 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 6 paths, 9 nets, and 9 connections (100.00% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)

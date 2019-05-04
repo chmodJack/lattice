@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(6): Semantic error in &quot;LOCATE COMP &quot;key[3]&quot; SITE &quot;N14&quot; ;&quot;: </Dynamic>
+            <Dynamic>key[3]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(7): Semantic error in &quot;LOCATE COMP &quot;led[0]&quot; SITE &quot;N13&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[0]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(8): Semantic error in &quot;LOCATE COMP &quot;led[1]&quot; SITE &quot;M12&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[1]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(9): Semantic error in &quot;LOCATE COMP &quot;led[2]&quot; SITE &quot;P12&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[2]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(10): Semantic error in &quot;LOCATE COMP &quot;led[3]&quot; SITE &quot;M11&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[3]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(11): Semantic error in &quot;LOCATE COMP &quot;led[4]&quot; SITE &quot;P11&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[4]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(12): Semantic error in &quot;LOCATE COMP &quot;led[5]&quot; SITE &quot;N10&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[5]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(13): Semantic error in &quot;LOCATE COMP &quot;led[6]&quot; SITE &quot;N9&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[6]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(14): Semantic error in &quot;LOCATE COMP &quot;led[7]&quot; SITE &quot;P9&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[7]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/code/fpga/lattice/led2/led.lpf(18): Semantic error in &quot;LOCATE COMP &quot;sw[3]&quot; SITE &quot;M10&quot; ;&quot;: </Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+            <Navigation>D:/code/fpga/lattice/led2/led.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/code/fpga/lattice/led2/led.v(1): </Dynamic>
+            <Dynamic>led</Dynamic>
+            <Navigation>d:/code/fpga/lattice/led2/led.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>key[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led1[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell decode38.TECH
+Register bits:  8 of 4635 (0.173%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         8          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                                INV         1          100.0
+                               LUT4         8          100.0
+                                 OB         8          100.0
+                              TOTAL        30

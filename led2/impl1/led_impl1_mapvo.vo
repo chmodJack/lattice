@@ -1,0 +1,239 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.10.0.111.2
+
+// ldbanno -n Verilog -o led_impl1_mapvo.vo -w -neg -gui -msgset D:/code/fpga/lattice/led2/promote.xml led_impl1_map.ncd 
+// Netlist created on Sat Apr 27 17:43:14 2019
+// Netlist written on Sat Apr 27 17:43:16 2019
+// Design is for device LCMXO2-4000HC
+// Design is for package CSBGA132
+// Design is for performance grade 4
+
+`timescale 1 ns / 1 ps
+
+module led ( key, sw, led1, led2 );
+  input  [2:0] key;
+  input  [2:0] sw;
+  output [2:0] led1;
+  output [2:0] led2;
+  wire   sw_c_2, led2_c_2, sw_c_1, led2_c_1, sw_c_0, led2_c_0, led1_c_2_c, 
+         led1_c_1_c, led1_c_0_c, VCCI;
+
+  SLICE_0 SLICE_0( .A0(sw_c_2), .F0(led2_c_2));
+  SLICE_1 SLICE_1( .A0(sw_c_1), .F0(led2_c_1));
+  SLICE_2 SLICE_2( .A0(sw_c_0), .F0(led2_c_0));
+  led1_2_ \led1[2]_I ( .PADDO(led1_c_2_c), .led12(led1[2]));
+  led1_1_ \led1[1]_I ( .PADDO(led1_c_1_c), .led11(led1[1]));
+  led1_0_ \led1[0]_I ( .PADDO(led1_c_0_c), .led10(led1[0]));
+  led2_2_ \led2[2]_I ( .PADDO(led2_c_2), .led22(led2[2]));
+  led2_1_ \led2[1]_I ( .PADDO(led2_c_1), .led21(led2[1]));
+  led2_0_ \led2[0]_I ( .PADDO(led2_c_0), .led20(led2[0]));
+  key_2_ \key[2]_I ( .PADDI(led1_c_2_c), .key2(key[2]));
+  key_1_ \key[1]_I ( .PADDI(led1_c_1_c), .key1(key[1]));
+  key_0_ \key[0]_I ( .PADDI(led1_c_0_c), .key0(key[0]));
+  sw_2_ \sw[2]_I ( .PADDI(sw_c_2), .sw2(sw[2]));
+  sw_1_ \sw[1]_I ( .PADDI(sw_c_1), .sw1(sw[1]));
+  sw_0_ \sw[0]_I ( .PADDI(sw_c_0), .sw0(sw[0]));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+endmodule
+
+module SLICE_0 ( input A0, output F0 );
+  wire   GNDI;
+
+  lut4 sw_2__I_0_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5555) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module SLICE_1 ( input A0, output F0 );
+  wire   GNDI;
+
+  lut4 sw_1__I_0_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_2 ( input A0, output F0 );
+  wire   GNDI;
+
+  lut4 sw_0__I_0_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led1_2_ ( input PADDO, output led12 );
+  wire   GNDI;
+
+  xo2iobuf led1_pad_2( .I(PADDO), .T(GNDI), .PAD(led12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led12) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module led1_1_ ( input PADDO, output led11 );
+  wire   GNDI;
+
+  xo2iobuf led1_pad_1( .I(PADDO), .T(GNDI), .PAD(led11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led1_0_ ( input PADDO, output led10 );
+  wire   GNDI;
+
+  xo2iobuf led1_pad_0( .I(PADDO), .T(GNDI), .PAD(led10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led10) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led2_2_ ( input PADDO, output led22 );
+  wire   GNDI;
+
+  xo2iobuf led2_pad_2( .I(PADDO), .T(GNDI), .PAD(led22));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led22) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led2_1_ ( input PADDO, output led21 );
+  wire   GNDI;
+
+  xo2iobuf led2_pad_1( .I(PADDO), .T(GNDI), .PAD(led21));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led21) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led2_0_ ( input PADDO, output led20 );
+  wire   GNDI;
+
+  xo2iobuf led2_pad_0( .I(PADDO), .T(GNDI), .PAD(led20));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led20) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module key_2_ ( output PADDI, input key2 );
+
+  xo2iobuf0001 led1_c_2_pad( .Z(PADDI), .PAD(key2));
+
+  specify
+    (key2 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge key2, 0:0:0);
+    $width (negedge key2, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0001 ( output Z, input PAD );
+
+  IBPD INST1( .I(PAD), .O(Z));
+endmodule
+
+module key_1_ ( output PADDI, input key1 );
+
+  xo2iobuf0001 led1_c_1_pad( .Z(PADDI), .PAD(key1));
+
+  specify
+    (key1 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge key1, 0:0:0);
+    $width (negedge key1, 0:0:0);
+  endspecify
+
+endmodule
+
+module key_0_ ( output PADDI, input key0 );
+
+  xo2iobuf0001 led1_c_0_pad( .Z(PADDI), .PAD(key0));
+
+  specify
+    (key0 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge key0, 0:0:0);
+    $width (negedge key0, 0:0:0);
+  endspecify
+
+endmodule
+
+module sw_2_ ( output PADDI, input sw2 );
+
+  xo2iobuf0001 sw_pad_2( .Z(PADDI), .PAD(sw2));
+
+  specify
+    (sw2 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw2, 0:0:0);
+    $width (negedge sw2, 0:0:0);
+  endspecify
+
+endmodule
+
+module sw_1_ ( output PADDI, input sw1 );
+
+  xo2iobuf0001 sw_pad_1( .Z(PADDI), .PAD(sw1));
+
+  specify
+    (sw1 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw1, 0:0:0);
+    $width (negedge sw1, 0:0:0);
+  endspecify
+
+endmodule
+
+module sw_0_ ( output PADDI, input sw0 );
+
+  xo2iobuf0001 sw_pad_0( .Z(PADDI), .PAD(sw0));
+
+  specify
+    (sw0 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw0, 0:0:0);
+    $width (negedge sw0, 0:0:0);
+  endspecify
+
+endmodule

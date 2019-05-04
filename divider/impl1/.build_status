@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1556618407"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1556618408"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1556618408"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1556618411"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1556620944"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1556620934">
+            <Task name="Map" build_result="0" update_result="2" update_time="1556620934"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1556620934"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1556620935"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1556620936"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1556620939">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1556620939"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1556620939"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1556620941"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1556621030">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1556621030"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1556621030"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1556621023"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/divider_impl1_map.vdb" last_build_time="1556620934" last_build_size="35810"/>
+        <Report name="IBIS/divider_impl1.ibs" last_build_time="1556618407" last_build_size="65202"/>
+        <Report name="divider_impl1.bgn" last_build_time="1556620944" last_build_size="4222"/>
+        <Report name="divider_impl1.bit" last_build_time="1556618411" last_build_size="16276"/>
+        <Report name="divider_impl1.ior" last_build_time="1556620941" last_build_size="2395"/>
+        <Report name="divider_impl1.jed" last_build_time="1556620944" last_build_size="849327"/>
+        <Report name="divider_impl1.lsedata" last_build_time="1556621029" last_build_size="47831"/>
+        <Report name="divider_impl1.ncd" last_build_time="1556620939" last_build_size="48299"/>
+        <Report name="divider_impl1.ngd" last_build_time="1556621029" last_build_size="46020"/>
+        <Report name="divider_impl1.tw1" last_build_time="1556620934" last_build_size="10113"/>
+        <Report name="divider_impl1.twr" last_build_time="1556620939" last_build_size="48221"/>
+        <Report name="divider_impl1_map.ncd" last_build_time="1556620933" last_build_size="37058"/>
+        <Report name="divider_impl1_mapvho.sdf" last_build_time="1556620936" last_build_size="32924"/>
+        <Report name="divider_impl1_mapvho.vho" last_build_time="1556620936" last_build_size="287190"/>
+        <Report name="divider_impl1_mapvo.sdf" last_build_time="1556620935" last_build_size="32725"/>
+        <Report name="divider_impl1_mapvo.vo" last_build_time="1556620935" last_build_size="38767"/>
+        <Report name="divider_impl1_vho.sdf" last_build_time="1556618408" last_build_size="26185"/>
+        <Report name="divider_impl1_vho.vho" last_build_time="1556618408" last_build_size="200076"/>
+        <Report name="divider_impl1_vo.sdf" last_build_time="1556618407" last_build_size="25938"/>
+        <Report name="divider_impl1_vo.vo" last_build_time="1556618407" last_build_size="26599"/>
+    </Strategy>
+</BuildStatus>

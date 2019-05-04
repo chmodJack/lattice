@@ -1,0 +1,4 @@
+#Start recording tcl command: 4/24/2019 19:39:09
+#Project Location: D:/code/fpga/lattice/led; Project name: led
+prj_project open "D:/code/fpga/lattice/led/led.ldf"
+#Stop recording: 4/24/2019 19:39:40

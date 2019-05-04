@@ -1,0 +1,109 @@
+
+ibisgen "led_impl1.pad" "C:/lscc/diamond/3.10_x64/cae_library/ibis/machxo2.ibs" 
+IBIS Models Generator: Lattice Diamond (64-bit) 3.10.0.111.2
+
+Sat Apr 27 17:44:50 2019
+
+Comp: key[0]
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[1]
+ Site: M13
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[2]
+ Site: M14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: led1[0]
+ Site: M2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led1[1]
+ Site: N2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led1[2]
+ Site: P2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led2[0]
+ Site: M3
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led2[1]
+ Site: N3
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led2[2]
+ Site: P4
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: sw[0]
+ Site: M7
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: sw[1]
+ Site: M8
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: sw[2]
+ Site: M9
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Created design models.
+
+
+Generating: D:\code\fpga\lattice\led2\impl1\IBIS\led_impl1.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />

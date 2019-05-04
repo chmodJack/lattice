@@ -1,0 +1,162 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Apr 30 18:43:49 2019
+
+
+Command Line:  synthesis -f divider_impl1_lattice.synproj -gui -msgset D:/code/fpga/lattice/divider/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = test_module.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/code/fpga/lattice/divider (searchpath added)
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p D:/code/fpga/lattice/divider/impl1 (searchpath added)
+-p D:/code/fpga/lattice/divider (searchpath added)
+Verilog design file = D:/code/fpga/lattice/divider/divider.v
+NGD file = divider_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/code/fpga/lattice/divider/divider.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): test_module
+INFO - synthesis: d:/code/fpga/lattice/divider/divider.v(1): compiling module test_module. VERI-1018
+WARNING - synthesis: d:/code/fpga/lattice/divider/divider.v(32): expression size 32 truncated to fit in target size 8. VERI-1209
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = test_module.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in test_module_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file divider_impl1.ngd.
+
+################### Begin Area Report (test_module)######################
+Number of register bits => 32 of 4635 (0 % )
+CCU2D => 18
+FD1P3JX => 8
+FD1S3IX => 24
+GSR => 1
+IB => 2
+LUT4 => 10
+OB => 8
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c_0, loads : 32
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_0_enable_8, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : counter_31__N_73, loads : 25
+  Net : n242, loads : 8
+  Net : clk_c_0_enable_8, loads : 8
+  Net : rst_c_0, loads : 2
+  Net : clk_out_c_7, loads : 2
+  Net : clk_out_c_6, loads : 2
+  Net : clk_out_c_5, loads : 2
+  Net : clk_out_c_4, loads : 2
+  Net : clk_out_c_3, loads : 2
+  Net : clk_out_c_2, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c_0]                 |  200.000 MHz|   94.375 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 57.391  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.422  secs
+--------------------------------------------------------------

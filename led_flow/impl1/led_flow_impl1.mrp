@@ -1,0 +1,270 @@
+
+           Lattice Mapping Report File for Design Module 'led_flow'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     led_flow_impl1.ngd -o led_flow_impl1_map.ncd -pr led_flow_impl1.prf -mp
+     led_flow_impl1.mrp -lpf
+     D:/code/fpga/lattice/led_flow/impl1/led_flow_impl1.lpf -lpf
+     D:/code/fpga/lattice/led_flow/led_flow.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  05/04/19  22:34:25
+
+Design Summary
+--------------
+
+   Number of registers:     40 out of  4635 (1%)
+      PFU registers:           40 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        37 out of  2160 (2%)
+      SLICEs as Logic/ROM:     37 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         30 out of  2160 (1%)
+   Number of LUT4s:         74 out of  4320 (2%)
+      Number used as logic LUTs:         14
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       60
+      Number used as shift registers:     0
+   Number of PIO sites used: 10 + 4(JTAG) out of 105 (13%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_c: 21 loads, 21 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  1
+     Net clk_c_enable_8: 4 loads, 4 LSLICEs
+
+                                    Page 1
+
+
+
+
+Design:  led_flow                                      Date:  05/04/19  22:34:25
+
+Design Summary (cont)
+---------------------
+   Number of LSRs:  1
+     Net n208: 17 loads, 17 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n208: 17 loads
+     Net clk_c_enable_8: 4 loads
+     Net counter_14: 3 loads
+     Net counter_16: 3 loads
+     Net counter_18: 3 loads
+     Net counter_19: 3 loads
+     Net counter_22: 3 loads
+     Net counter_25: 3 loads
+     Net counter_6: 3 loads
+     Net counter_9: 3 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+                                    Page 2
+
+
+
+
+Design:  led_flow                                      Date:  05/04/19  22:34:25
+
+Removed logic
+-------------
+
+Block i177 undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal add_162_4/S1 undriven or does not drive anything - clipped.
+Signal add_162_4/S0 undriven or does not drive anything - clipped.
+Signal add_162_6/S1 undriven or does not drive anything - clipped.
+Signal add_162_6/S0 undriven or does not drive anything - clipped.
+Signal add_162_12/S1 undriven or does not drive anything - clipped.
+Signal add_162_12/S0 undriven or does not drive anything - clipped.
+Signal add_162_14/S1 undriven or does not drive anything - clipped.
+Signal add_162_14/S0 undriven or does not drive anything - clipped.
+Signal add_162_8/S1 undriven or does not drive anything - clipped.
+Signal add_162_8/S0 undriven or does not drive anything - clipped.
+Signal add_162_10/S1 undriven or does not drive anything - clipped.
+Signal add_162_10/S0 undriven or does not drive anything - clipped.
+Signal counter_33_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal counter_33_add_4_33/CO undriven or does not drive anything - clipped.
+Signal add_162_2/S1 undriven or does not drive anything - clipped.
+Signal add_162_2/S0 undriven or does not drive anything - clipped.
+Signal add_162_2/CI undriven or does not drive anything - clipped.
+Signal add_162_16/S1 undriven or does not drive anything - clipped.
+Signal add_162_16/S0 undriven or does not drive anything - clipped.
+Signal add_162_18/S1 undriven or does not drive anything - clipped.
+Signal add_162_18/S0 undriven or does not drive anything - clipped.
+Signal add_162_20/S1 undriven or does not drive anything - clipped.
+Signal add_162_20/S0 undriven or does not drive anything - clipped.
+Signal add_162_22/S1 undriven or does not drive anything - clipped.
+Signal add_162_22/S0 undriven or does not drive anything - clipped.
+Signal add_162_24/S1 undriven or does not drive anything - clipped.
+Signal add_162_24/S0 undriven or does not drive anything - clipped.
+Signal add_162_26/S0 undriven or does not drive anything - clipped.
+Signal add_162_26/CO undriven or does not drive anything - clipped.
+Signal counter_33_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal counter_33_add_4_1/CI undriven or does not drive anything - clipped.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+                                    Page 3
+
+
+
+
+Design:  led_flow                                      Date:  05/04/19  22:34:25
+
+GSR Usage (cont)
+----------------
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 32 
+
+     Type and instance name of component: 
+   Register : counter_33__i0
+   Register : counter_33__i31
+   Register : counter_33__i30
+   Register : counter_33__i29
+   Register : counter_33__i28
+   Register : counter_33__i27
+   Register : counter_33__i26
+   Register : counter_33__i25
+   Register : counter_33__i24
+   Register : counter_33__i23
+   Register : counter_33__i22
+   Register : counter_33__i21
+   Register : counter_33__i20
+   Register : counter_33__i19
+   Register : counter_33__i18
+   Register : counter_33__i17
+   Register : counter_33__i16
+   Register : counter_33__i15
+   Register : counter_33__i14
+   Register : counter_33__i13
+   Register : counter_33__i12
+   Register : counter_33__i11
+   Register : counter_33__i10
+   Register : counter_33__i9
+   Register : counter_33__i8
+   Register : counter_33__i7
+   Register : counter_33__i6
+   Register : counter_33__i5
+   Register : counter_33__i4
+   Register : counter_33__i3
+   Register : counter_33__i2
+   Register : counter_33__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 49 MB
+        
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

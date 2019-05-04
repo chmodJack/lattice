@@ -1,0 +1,14 @@
+----------------------------------------------------------------------
+Report for cell test_module.TECH
+Register bits:  32 of 4635 (0.690%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18          100.0
+                            FD1P3JX         8          100.0
+                            FD1S3IX        24          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4        10          100.0
+                                 OB         8          100.0
+                              TOTAL        71

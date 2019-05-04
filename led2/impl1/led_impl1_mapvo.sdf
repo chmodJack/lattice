@@ -1,0 +1,189 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "led")
+  (DATE "Sat Apr 27 17:43:16 2019")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.10.0.111.2")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "SLICE_0")
+    (INSTANCE SLICE_0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH A0 F0 (367:431:495)(367:431:495))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_1")
+    (INSTANCE SLICE_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH A0 F0 (367:431:495)(367:431:495))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_2")
+    (INSTANCE SLICE_2)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH A0 F0 (367:431:495)(367:431:495))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led1_2_")
+    (INSTANCE led1\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led12 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led1_1_")
+    (INSTANCE led1\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led11 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led1_0_")
+    (INSTANCE led1\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led10 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led2_2_")
+    (INSTANCE led2\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led22 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led2_1_")
+    (INSTANCE led2\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led21 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led2_0_")
+    (INSTANCE led2\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led20 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "key_2_")
+    (INSTANCE key\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH key2 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge key2) (3330:3330:3330))
+      (WIDTH (negedge key2) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "key_1_")
+    (INSTANCE key\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH key1 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge key1) (3330:3330:3330))
+      (WIDTH (negedge key1) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "key_0_")
+    (INSTANCE key\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH key0 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge key0) (3330:3330:3330))
+      (WIDTH (negedge key0) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_2_")
+    (INSTANCE sw\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw2 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw2) (3330:3330:3330))
+      (WIDTH (negedge sw2) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_1_")
+    (INSTANCE sw\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw1 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw1) (3330:3330:3330))
+      (WIDTH (negedge sw1) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_0_")
+    (INSTANCE sw\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw0 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw0) (3330:3330:3330))
+      (WIDTH (negedge sw0) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "led")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT sw\[2\]_I/PADDI SLICE_0/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_0/F0 led2\[2\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sw\[1\]_I/PADDI SLICE_1/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_1/F0 led2\[1\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sw\[0\]_I/PADDI SLICE_2/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_2/F0 led2\[0\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT key\[2\]_I/PADDI led1\[2\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT key\[1\]_I/PADDI led1\[1\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT key\[0\]_I/PADDI led1\[0\]_I/PADDO (0:0:0)(0:0:0))
+      )
+    )
+  )
+)

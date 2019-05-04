@@ -1,0 +1,12 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+LOCATE COMP "clk_out[0]" SITE "N13" ;
+LOCATE COMP "clk_out[1]" SITE "M12" ;
+LOCATE COMP "clk_out[2]" SITE "P12" ;
+LOCATE COMP "clk_out[3]" SITE "M11" ;
+LOCATE COMP "clk_out[4]" SITE "P11" ;
+LOCATE COMP "clk_out[5]" SITE "N10" ;
+LOCATE COMP "clk_out[6]" SITE "N9" ;
+LOCATE COMP "clk_out[7]" SITE "P9" ;
+LOCATE COMP "clk[0]" SITE "C1" ;
+LOCATE COMP "rst[0]" SITE "L14" ;

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "divider_impl1.log"
+-o "divider_impl1.csv"
+-pr "divider_impl1.prf"
